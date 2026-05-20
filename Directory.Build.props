@@ -1,0 +1,23 @@
+<Project>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>CS1591</NoWarn>
+    <VersionPrefix>1.4.2</VersionPrefix>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>Crestacle</Authors>
+    <Company>Crestacle</Company>
+    <Copyright>Copyright © 2025 Crestacle</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>aspnetcore;entityframework;security</PackageTags>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+</Project>

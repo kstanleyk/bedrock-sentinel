@@ -1,0 +1,23 @@
+# Build output
+bin/
+obj/
+artifacts/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Rider
+.idea/
+
+# NuGet
+*.nupkg
+*.snupkg
+
+# dotnet tools
+.config/dotnet-tools.json
+
+# Test results
+TestResults/
+coverage/

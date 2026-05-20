@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Crestacle.Sentinel.AspNetCore</AssemblyName>
+    <RootNamespace>Crestacle.Sentinel.AspNetCore</RootNamespace>
+    <PackageId>Crestacle.Sentinel.AspNetCore</PackageId>
+    <Description>Sentinel ASP.NET Core — MustHavePermission attribute, dynamic permission policy provider, and authorization handler for ASP.NET Core applications.</Description>
+  </PropertyGroup>
+
+  <!-- Expose internal types to the test project -->
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>Crestacle.Sentinel.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <ProjectReference Include="..\Crestacle.Sentinel.Core\Crestacle.Sentinel.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>Crestacle.Bedrock.Redis</PackageId>
+    <Description>Redis-backed IBedrockCache implementation for Crestacle.Bedrock, enabling distributed caching across multiple pods via StackExchange.Redis.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Crestacle.Bedrock.Core\Crestacle.Bedrock.Core.csproj" />
+    <ProjectReference Include="..\Crestacle.Bedrock.AspNetCore\Crestacle.Bedrock.AspNetCore.csproj" />
+    <PackageReference Include="StackExchange.Redis" />
+    <PackageReference Include="Microsoft.Extensions.Options" />
+  </ItemGroup>
+
+</Project>

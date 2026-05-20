@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Crestacle.Bedrock.Sentinel</AssemblyName>
+    <RootNamespace>Crestacle.Bedrock.Sentinel</RootNamespace>
+    <PackageId>Crestacle.Bedrock.Sentinel</PackageId>
+    <Description>Bridge package that wires Crestacle.Bedrock (authentication) and Crestacle.Sentinel (RBAC authorisation) together — unified DI registration, tenant context adapter, and optional JWT permission-claims enrichment.</Description>
+  </PropertyGroup>
+
+  <!-- Expose internals to the test project -->
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>Crestacle.Bedrock.Sentinel.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Crestacle.Bedrock.Core\Crestacle.Bedrock.Core.csproj" />
+    <ProjectReference Include="..\Crestacle.Bedrock.AspNetCore\Crestacle.Bedrock.AspNetCore.csproj" />
+    <ProjectReference Include="..\Crestacle.Bedrock.EntityFramework\Crestacle.Bedrock.EntityFramework.csproj" />
+    <ProjectReference Include="..\Crestacle.Sentinel.Core\Crestacle.Sentinel.Core.csproj" />
+    <ProjectReference Include="..\Crestacle.Sentinel.AspNetCore\Crestacle.Sentinel.AspNetCore.csproj" />
+    <ProjectReference Include="..\Crestacle.Sentinel.EntityFramework\Crestacle.Sentinel.EntityFramework.csproj" />
+  </ItemGroup>
+
+</Project>

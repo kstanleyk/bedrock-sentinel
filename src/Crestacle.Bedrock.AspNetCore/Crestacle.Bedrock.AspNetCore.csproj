@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>Crestacle.Bedrock.AspNetCore</PackageId>
+    <Description>ASP.NET Core controllers, middleware, attributes, JWT integration, and DI registration for Crestacle.Bedrock.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\common-passwords.txt.gz">
+      <LogicalName>Crestacle.Bedrock.AspNetCore.Resources.common-passwords.txt.gz</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <ProjectReference Include="..\Crestacle.Bedrock.Core\Crestacle.Bedrock.Core.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" />
+    <PackageReference Include="Konscious.Security.Cryptography.Argon2" />
+    <PackageReference Include="BCrypt.Net-Next" />
+    <PackageReference Include="Otp.NET" />
+    <PackageReference Include="Fido2" />
+  </ItemGroup>
+
+</Project>

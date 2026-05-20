@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Crestacle.Sentinel.EntityFramework</AssemblyName>
+    <RootNamespace>Crestacle.Sentinel.EntityFramework</RootNamespace>
+    <PackageId>Crestacle.Sentinel.EntityFramework</PackageId>
+    <Description>Sentinel Entity Framework — EF Core configurations, repository implementations, and base seeder for the Sentinel RBAC auth schema.</Description>
+  </PropertyGroup>
+
+  <!-- Expose internal types to the test project -->
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>Crestacle.Sentinel.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
+    <ProjectReference Include="..\Crestacle.Sentinel.Core\Crestacle.Sentinel.Core.csproj" />
+  </ItemGroup>
+
+</Project>

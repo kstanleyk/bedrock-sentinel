@@ -1,0 +1,30 @@
+using Crestacle.Bedrock.Core.Enumerations;
+
+namespace Crestacle.Bedrock.AspNetCore.Models;
+
+public sealed record RegisterRequest(string Email, string Password);
+public sealed record ConfirmEmailRequest(string Token);
+public sealed record ResendConfirmationRequest(string Email);
+public sealed record LoginRequest(string Email, string Password, string? FingerprintHash = null);
+public sealed record VerifyMfaRequest(string ChallengeToken, string Code, string? FingerprintHash = null);
+public sealed record RefreshRequest(string RefreshToken, string? FingerprintHash = null);
+public sealed record RevokeRequest(string RefreshToken);
+public sealed record ForgotPasswordRequest(string Email);
+public sealed record ResetPasswordRequest(string Token, string NewPassword);
+public sealed record ChangePasswordRequest(string CurrentPassword, string NewPassword);
+public sealed record ConfirmTotpRequest(string Code);
+public sealed record SetupOtpRequest(MfaMethod Method);
+public sealed record VerifyStepUpRequest(Guid ChallengeId, string Code);
+public sealed record RecordConsentRequest(string PolicyType, string PolicyVersion);
+public sealed record RequestEmailChangeRequest(string NewEmail);
+public sealed record ConfirmEmailChangeRequest(string TokenHash);
+public sealed record MagicLinkRequest(string Email);
+public sealed record VerifyMagicLinkRequest(string TokenHash, string? FingerprintHash = null);
+public sealed record CompletePasskeyRegistrationRequest(string AttestationResponse, string? FriendlyName);
+public sealed record BeginPasskeyAuthenticationRequest(string? Email);
+public sealed record CompletePasskeyAuthenticationRequest(string AssertionResponse);
+public sealed record ExternalLoginRequest(string Provider, string ProviderToken, string? FingerprintHash = null);
+public sealed record LinkExternalIdentityRequest(string Provider, string ProviderToken);
+public sealed record CreateInvitationRequest(string TargetEmail, string? RoleHint = null);
+public sealed record AcceptInvitationRequest(string TokenHash, string Password);
+public sealed record CreateApiKeyRequest(string? Name = null);

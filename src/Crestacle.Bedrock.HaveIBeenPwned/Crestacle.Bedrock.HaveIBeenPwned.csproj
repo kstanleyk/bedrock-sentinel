@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>Crestacle.Bedrock.HaveIBeenPwned</PackageId>
+    <Description>Breached-password detection via the Have I Been Pwned k-anonymity API for Crestacle.Bedrock.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <ProjectReference Include="..\Crestacle.Bedrock.Core\Crestacle.Bedrock.Core.csproj" />
+    <ProjectReference Include="..\Crestacle.Bedrock.AspNetCore\Crestacle.Bedrock.AspNetCore.csproj" />
+  </ItemGroup>
+
+</Project>

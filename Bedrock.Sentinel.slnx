@@ -1,0 +1,25 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+
+  <Folder Name="/src/">
+    <Project Path="src/Crestacle.Bedrock.Core/Crestacle.Bedrock.Core.csproj" />
+    <Project Path="src/Crestacle.Bedrock.EntityFramework/Crestacle.Bedrock.EntityFramework.csproj" />
+    <Project Path="src/Crestacle.Bedrock.AspNetCore/Crestacle.Bedrock.AspNetCore.csproj" />
+    <Project Path="src/Crestacle.Bedrock.HaveIBeenPwned/Crestacle.Bedrock.HaveIBeenPwned.csproj" />
+    <Project Path="src/Crestacle.Bedrock.Redis/Crestacle.Bedrock.Redis.csproj" />
+    <Project Path="src/Crestacle.Sentinel.Core/Crestacle.Sentinel.Core.csproj" />
+    <Project Path="src/Crestacle.Sentinel.EntityFramework/Crestacle.Sentinel.EntityFramework.csproj" />
+    <Project Path="src/Crestacle.Sentinel.AspNetCore/Crestacle.Sentinel.AspNetCore.csproj" />
+    <Project Path="src/Crestacle.Bedrock.Sentinel/Crestacle.Bedrock.Sentinel.csproj" />
+  </Folder>
+
+  <Folder Name="/tests/">
+    <Project Path="tests/Crestacle.Bedrock.Tests.Unit/Crestacle.Bedrock.Tests.Unit.csproj" />
+    <Project Path="tests/Crestacle.Bedrock.Tests.Integration/Crestacle.Bedrock.Tests.Integration.csproj" />
+    <Project Path="tests/Crestacle.Sentinel.Tests/Crestacle.Sentinel.Tests.csproj" />
+    <Project Path="tests/Crestacle.Bedrock.Sentinel.Tests/Crestacle.Bedrock.Sentinel.Tests.csproj" />
+  </Folder>
+</Solution>

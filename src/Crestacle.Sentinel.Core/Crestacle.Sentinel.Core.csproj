@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Crestacle.Sentinel.Core</AssemblyName>
+    <RootNamespace>Crestacle.Sentinel.Core</RootNamespace>
+    <PackageId>Crestacle.Sentinel.Core</PackageId>
+    <Description>Sentinel Core — RBAC entities, permission constants, repository interfaces, and DTOs for role-based access control.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+  </ItemGroup>
+
+</Project>
