@@ -80,3 +80,17 @@ All auth endpoints are now available under `api/bedrock/` — see the [API refer
 - [Redis distributed cache](docs/integrations/redis.md)
 - [Have I Been Pwned](docs/integrations/hibp.md)
 - [External identity providers](docs/integrations/external-idp.md)
+
+## Samples
+
+Runnable sample projects, one per deployment model. Each uses SQLite — no external database needed.
+
+| Sample | Model |
+|---|---|
+| [samples/Embedded](samples/Embedded/) | Auth and business data in one app |
+| [samples/Standalone](samples/Standalone/) | Dedicated auth microservice |
+| [samples/ExternalIdp](samples/ExternalIdp/) | Bedrock + external token issuer |
+
+```bash
+cd samples/Embedded && dotnet run
+```

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Crestacle.Bedrock.AspNetCore\Crestacle.Bedrock.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\src\Crestacle.Bedrock.EntityFramework\Crestacle.Bedrock.EntityFramework.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+  </ItemGroup>
+
+</Project>

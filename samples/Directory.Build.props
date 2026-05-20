@@ -1,0 +1,8 @@
+<Project>
+  <!-- Samples are not library packages — relax library-level strictness. -->
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+</Project>
