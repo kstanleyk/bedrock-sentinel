@@ -16,6 +16,12 @@
     <Project Path="src/Crestacle.Bedrock.Sentinel/Crestacle.Bedrock.Sentinel.csproj" />
   </Folder>
 
+  <Folder Name="/samples/">
+    <Project Path="samples/Embedded/Embedded.csproj" />
+    <Project Path="samples/Standalone/Standalone.csproj" />
+    <Project Path="samples/ExternalIdp/ExternalIdp.csproj" />
+  </Folder>
+
   <Folder Name="/tests/">
     <Project Path="tests/Crestacle.Bedrock.Tests.Unit/Crestacle.Bedrock.Tests.Unit.csproj" />
     <Project Path="tests/Crestacle.Bedrock.Tests.Integration/Crestacle.Bedrock.Tests.Integration.csproj" />
