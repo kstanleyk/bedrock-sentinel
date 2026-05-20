@@ -80,6 +80,7 @@ All auth endpoints are now available under `api/bedrock/` — see the [API refer
 - [Redis distributed cache](docs/integrations/redis.md)
 - [Have I Been Pwned](docs/integrations/hibp.md)
 - [External identity providers](docs/integrations/external-idp.md)
+- [OpenIddict](docs/integrations/openiddict.md)
 
 ## Samples
 
